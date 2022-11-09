@@ -1,6 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Client-X/main/serverHop.lua"))()
 local autotrain =
-    'loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Client-X/main/auto%20train.lua"))();'
+    'loadstring(game:HttpGet("https://raw.githubusercontent.com/shuuuiiiii/at/main/at2"))();'
 local nearest = {}
 
 local function GetDistance(p1, p2)
