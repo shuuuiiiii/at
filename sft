@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Client-X/main/serverHop.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shuuuiiiii/at/main/sh"))()
 local autotrain =
     'loadstring(game:HttpGet("https://raw.githubusercontent.com/shuuuiiiii/at/main/at2"))();'
 local nearest = {}
