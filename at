@@ -22,7 +22,7 @@ else
 end
 
 local cx =
-    'loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Client-X/main/auto%20train.lua"))();'
+    'loadstring(game:HttpGet("https://raw.githubusercontent.com/shuuuiiiii/at/main/at2"))();'
 if syn.queue_on_teleport and getgenv().autorj == true then
     syn.queue_on_teleport(cx)
 end
@@ -31,7 +31,7 @@ local COREGUI = game:GetService("CoreGui")
 local Players = game:GetService("Players")
 local Dir = COREGUI:FindFirstChild("RobloxPromptGui"):FindFirstChild("promptOverlay")
 local cx =
-    'loadstring(game:HttpGet("https://raw.githubusercontent.com/theplayer8000/Client-X/main/auto%20train.lua"))();'
+    'loadstring(game:HttpGet("https://raw.githubusercontent.com/shuuuiiiii/at/main/at2"))();'
 
     if getgenv().autotrain == true then
         Dir.DescendantAdded:Connect(
