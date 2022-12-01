@@ -127,7 +127,7 @@ coroutine.wrap(
 )()
 coroutine.wrap(
     function()
-        wait(60)
+        wait(1200)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/shuuuiiiii/at/main/sh"))()
 
         while task.wait() do
