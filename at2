@@ -86,6 +86,7 @@ coroutine.wrap(
                 end
             )
         end
+        
         loadstring(game:HttpGet("https://raw.githubusercontent.com/shuuuiiiii/at/main/plst"))()
       game.Players.LocalPlayer.PlayerGui.ScreenGui.QuestTalkBtn.Size = UDim2.new(0, 1000, 0, 1000)
   coroutine.wrap(function()
@@ -103,7 +104,10 @@ coroutine.wrap(
                     )
                 end
                 end)()
-        coroutine.wrap(
+ game.Lighting.Blur.Enabled = false
+        game.Players.LocalPlayer.PlayerGui.IntroGui.Enabled = false
+        game.Players.LocalPlayer.PlayerGui.ScreenGui.Enabled = true
+coroutine.wrap(
             function()
                 wait(3)
                 local speaker = game.Players.LocalPlayer
