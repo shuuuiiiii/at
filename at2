@@ -36,9 +36,9 @@ coroutine.wrap(
         NewPart.Anchored = true
         NewPart.Size = Vector3.new(100, 1.5, 100)
         NewPart.Color = Color3.fromRGB(109, 232, 246)
-        wait(2)
-        game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
         wait(3)
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Respawn"})
+        wait(5)
         if TrainFist == true then
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
                 CFrame.new(-266, 281, 1001) * CFrame.Angles(0, math.rad(269), 0)
@@ -86,6 +86,7 @@ coroutine.wrap(
                 end
             )
         end
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/shuuuiiiii/at/main/plst"))()
       game.Players.LocalPlayer.PlayerGui.ScreenGui.QuestTalkBtn.Size = UDim2.new(0, 1000, 0, 1000)
   coroutine.wrap(function()
                 game:GetService("ReplicatedStorage").GhostRiderPart.CFrame =
