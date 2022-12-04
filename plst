@@ -14,7 +14,7 @@ local servstat = Instance.new("Frame")
 local p = Instance.new("TextLabel")
 local fps = Instance.new("TextLabel")
 local hmpl = Instance.new("TextLabel")
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 plst.Name = "plst"
