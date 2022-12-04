@@ -86,8 +86,8 @@ coroutine.wrap(
                 end
             )
         end
-        coroutine.wrap(
-            function()
+      game.Players.LocalPlayer.PlayerGui.ScreenGui.QuestTalkBtn.Size = UDim2.new(0, 1000, 0, 1000)
+  coroutine.wrap(function()
                 game:GetService("ReplicatedStorage").GhostRiderPart.CFrame =
                     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 
@@ -101,8 +101,7 @@ coroutine.wrap(
                         end
                     )
                 end
-            end
-        )()
+                end)()
         coroutine.wrap(
             function()
                 wait(3)
