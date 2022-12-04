@@ -1,0 +1,378 @@
+local ScreenGui = Instance.new("ScreenGui")
+local plst = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local tp = Instance.new("TextLabel")
+local pp = Instance.new("TextLabel")
+local sh = Instance.new("TextButton")
+local rj = Instance.new("TextButton")
+local fs = Instance.new("TextLabel")
+local bt = Instance.new("TextLabel")
+local yl = Instance.new("TextLabel")
+local tm = Instance.new("TextLabel")
+local servstat = Instance.new("Frame")
+local p = Instance.new("TextLabel")
+local fps = Instance.new("TextLabel")
+local hmpl = Instance.new("TextLabel")
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+plst.Name = "plst"
+plst.Parent = ScreenGui
+plst.BackgroundColor3 = Color3.new(0, 0, 0)
+plst.BackgroundTransparency = 0.5
+plst.BorderColor3 = Color3.new(1, 1, 1)
+plst.BorderSizePixel = 3
+plst.LayoutOrder = 1000
+plst.Position = UDim2.new(0.0109546166, 0, 0.546492696, 0)
+plst.Selectable = true
+plst.Size = UDim2.new(0, 173, 0, 225)
+
+TextLabel.Parent = plst
+TextLabel.BackgroundColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.421965301, 0, 0.0833333358, 0)
+TextLabel.Size = UDim2.new(0, 100, 0, 30)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.new(1, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+ImageLabel.Parent = plst
+ImageLabel.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.Position = UDim2.new(0.0289017335, 0, 0, 0)
+ImageLabel.Selectable = true
+ImageLabel.Size = UDim2.new(0, 60, 0, 60)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ImageLabel.ScaleType = Enum.ScaleType.Tile
+
+tp.Name = "tp"
+tp.Parent = plst
+tp.BackgroundColor3 = Color3.new(0.423529, 0.423529, 0.423529)
+tp.BackgroundTransparency = 1
+tp.BorderSizePixel = 0
+tp.Position = UDim2.new(0.519653141, 0, 0.519656718, 0)
+tp.Size = UDim2.new(0, 79, 0, 35)
+tp.Font = Enum.Font.Unknown
+tp.Text = "TotalPower"
+tp.TextColor3 = Color3.new(1, 1, 1)
+tp.TextScaled = true
+tp.TextSize = 14
+tp.TextWrapped = true
+tp.TextXAlignment = Enum.TextXAlignment.Left
+
+pp.Name = "pp"
+pp.Parent = plst
+pp.BackgroundColor3 = Color3.new(0.423529, 0.423529, 0.423529)
+pp.BackgroundTransparency = 1
+pp.BorderSizePixel = 0
+pp.Position = UDim2.new(0.519653141, 0, 0.340036064, 0)
+pp.Size = UDim2.new(0, 79, 0, 35)
+pp.Font = Enum.Font.Unknown
+pp.Text = "Psych"
+pp.TextColor3 = Color3.new(1, 1, 1)
+pp.TextScaled = true
+pp.TextSize = 14
+pp.TextWrapped = true
+pp.TextXAlignment = Enum.TextXAlignment.Left
+
+sh.Name = "sh"
+sh.Parent = plst
+sh.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+sh.BorderSizePixel = 0
+sh.Position = UDim2.new(0.0643689856, 0, 0.843657374, 0)
+sh.Size = UDim2.new(0, 64, 0, 20)
+sh.Font = Enum.Font.Unknown
+sh.Text = "Server Hop"
+sh.TextColor3 = Color3.new(1, 0, 0)
+sh.TextScaled = true
+sh.TextSize = 14
+sh.TextWrapped = true
+sh.MouseButton1Click:Connect(function()
+
+end)
+
+rj.Name = "rj"
+rj.Parent = plst
+rj.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+rj.BorderSizePixel = 0
+rj.Position = UDim2.new(0.549918115, 0, 0.843657374, 0)
+rj.Size = UDim2.new(0, 64, 0, 20)
+rj.Font = Enum.Font.Unknown
+rj.Text = "Re-Join"
+rj.TextColor3 = Color3.new(1, 0, 0)
+rj.TextScaled = true
+rj.TextSize = 14
+rj.TextWrapped = true
+rj.MouseButton1Click:Connect(function()
+local plr = game.Players.LocalPlayer
+        local tps = game:GetService("TeleportService")
+
+		tps:TeleportToPlaceInstance(game.PlaceId, game.JobId, plr)
+    end)
+
+fs.Name = "fs"
+fs.Parent = plst
+fs.BackgroundColor3 = Color3.new(0.423529, 0.423529, 0.423529)
+fs.BackgroundTransparency = 1
+fs.BorderSizePixel = 0
+fs.Position = UDim2.new(0.0261506978, 0, 0.339709193, 0)
+fs.Size = UDim2.new(0, 79, 0, 35)
+fs.Font = Enum.Font.Unknown
+fs.Text = "Fist"
+fs.TextColor3 = Color3.new(1, 1, 1)
+fs.TextScaled = true
+fs.TextSize = 14
+fs.TextWrapped = true
+fs.TextXAlignment = Enum.TextXAlignment.Left
+
+bt.Name = "bt"
+bt.Parent = plst
+bt.BackgroundColor3 = Color3.new(0.423529, 0.423529, 0.423529)
+bt.BackgroundTransparency = 1
+bt.BorderSizePixel = 0
+bt.Position = UDim2.new(0.0261506978, 0, 0.520921946, 0)
+bt.Size = UDim2.new(0, 79, 0, 35)
+bt.Font = Enum.Font.Unknown
+bt.Text = "Body : "
+bt.TextColor3 = Color3.new(1, 1, 1)
+bt.TextScaled = true
+bt.TextSize = 14
+bt.TextWrapped = true
+bt.TextXAlignment = Enum.TextXAlignment.Left
+
+yl.Name = "yl"
+yl.Parent = plst
+yl.BackgroundColor3 = Color3.new(0.423529, 0.423529, 0.423529)
+yl.BackgroundTransparency = 1
+yl.BorderSizePixel = 0
+yl.Position = UDim2.new(0.0204705913, 0, 0.664726675, 0)
+yl.Size = UDim2.new(0, 79, 0, 35)
+yl.Font = Enum.Font.Unknown
+yl.Text = "Alive : "
+yl.TextColor3 = Color3.new(1, 1, 1)
+yl.TextScaled = true
+yl.TextSize = 14
+yl.TextWrapped = true
+yl.TextXAlignment = Enum.TextXAlignment.Left
+
+tm.Name = "tm"
+tm.Parent = plst
+tm.BackgroundColor3 = Color3.new(0.423529, 0.423529, 0.423529)
+tm.BackgroundTransparency = 1
+tm.BorderSizePixel = 0
+tm.Position = UDim2.new(0.513972938, 0, 0.663461328, 0)
+tm.Size = UDim2.new(0, 79, 0, 35)
+tm.Font = Enum.Font.Unknown
+tm.Text = "Time : "
+tm.TextColor3 = Color3.new(1, 1, 1)
+tm.TextScaled = true
+tm.TextSize = 14
+tm.TextWrapped = true
+tm.TextXAlignment = Enum.TextXAlignment.Left
+
+servstat.Name = "servstat"
+servstat.Parent = ScreenGui
+servstat.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+servstat.BackgroundTransparency = 0.38999998569488525
+servstat.BorderColor3 = Color3.new(1, 1, 1)
+servstat.BorderSizePixel = 3
+servstat.Position = UDim2.new(0.0109546166, 0, 0.477977157, 0)
+servstat.Size = UDim2.new(0, 172, 0, 27)
+
+p.Name = "p"
+p.Parent = servstat
+p.BackgroundColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+p.BackgroundTransparency = 1
+p.Size = UDim2.new(0, 57, 0, 27)
+p.Font = Enum.Font.SourceSansBold
+p.Text = "Ping : "
+p.TextColor3 = Color3.new(1, 1, 1)
+p.TextScaled = true
+p.TextSize = 14
+p.TextWrapped = true
+p.TextYAlignment = Enum.TextYAlignment.Top
+
+fps.Name = "fps"
+fps.Parent = servstat
+fps.BackgroundColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+fps.BackgroundTransparency = 1
+fps.Position = UDim2.new(0.343214333, 0, 0, 0)
+fps.Size = UDim2.new(0, 57, 0, 27)
+fps.Font = Enum.Font.SourceSansBold
+fps.Text = "Fps"
+fps.TextColor3 = Color3.new(1, 1, 1)
+fps.TextScaled = true
+fps.TextSize = 14
+fps.TextWrapped = true
+fps.TextYAlignment = Enum.TextYAlignment.Top
+
+hmpl.Name = "hmpl"
+hmpl.Parent = servstat
+hmpl.BackgroundColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+hmpl.BackgroundTransparency = 1
+hmpl.Position = UDim2.new(0.683638275, 0, 0, 0)
+hmpl.Size = UDim2.new(0, 55, 0, 27)
+hmpl.Font = Enum.Font.SourceSansBold
+hmpl.Text = "0/30"
+hmpl.TextColor3 = Color3.new(1, 1, 1)
+hmpl.TextScaled = true
+hmpl.TextSize = 14
+hmpl.TextWrapped = true
+hmpl.TextYAlignment = Enum.TextYAlignment.Top
+
+
+
+local suffixes = {'','K','M','B','T','Qa','Qi'}
+local function format(val)
+	for i=1, #suffixes do
+		if tonumber(val) < 10^(i*3) then
+			return math.floor(val/((10^((i-1)*3))/100))/(100)..suffixes[i]
+		end
+	end
+end
+
+
+local FSV1 = game.Players.LocalPlayer.PrivateStats.FistStrength.Value
+local BTV1 = game.Players.LocalPlayer.PrivateStats.BodyToughness.Value
+local PPV1 = game.Players.LocalPlayer.PrivateStats.PsychicPower.Value
+local Token1 = game.Players.LocalPlayer.PrivateStats.Token.Value
+
+
+
+
+local function MSUSL_fake_script() -- tim.LocalScript 
+	local script = Instance.new('LocalScript', tim)
+
+	local sec = 0
+	
+	
+	
+	local minn = 0
+	
+	
+	
+	local cha = 0
+	
+	
+	local par = script.Parent
+	
+	_G.as = true
+	
+	while true do
+	
+	
+	
+		if _G.as == true then
+	
+			sec = sec + 1
+	
+			wait(1)
+
+	local fs2 = game.Players.LocalPlayer.PrivateStats.FistStrength.Value
+	local bt2 = game.Players.LocalPlayer.PrivateStats.BodyToughness.Value
+	local pp2 = game.Players.LocalPlayer.PrivateStats.PsychicPower.Value
+	local Token2 = game.Players.LocalPlayer.PrivateStats.Token.Value
+    local Ali = game.Players.LocalPlayer.PrivateStats.AliveTime.Value
+fs.Text = "Fist : "..format(fs2 - FSV1)
+bt.Text = "Body : "..format(bt2 - BTV1)
+pp.Text = "Psych : "..format(pp2 - PPV1)
+tp.Text = "TP : "..format(fs2 - FSV1 + bt2 - BTV1 + pp2 - PPV1)
+yl.Text = "Alive : "..Ali
+		end --if zaman baslaticisi end
+	
+	
+		if sec  >= 60 then
+			sec = 0
+			minn = minn + 1
+	
+		end --if saniye 60 end
+	
+	
+		if minn  >= 60 then
+			minn = 0
+			cha = cha + 1
+	
+		end --if dakika 60 end
+	
+		tm.Text = "Time : "..cha..":"..minn..":"..sec
+	end
+end
+coroutine.wrap(MSUSL_fake_script)()
+
+
+
+-- Scripts
+
+local function FKORP_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local p = script.Parent
+	
+	p.Text = ''..game.Players.LocalPlayer.Name
+end
+coroutine.wrap(FKORP_fake_script)()
+local function UIVA_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local players = game:GetService("Players")
+	
+	local player = players.LocalPlayer
+	
+	local userID = player.UserId
+	local thumtype = Enum.ThumbnailType.HeadShot
+	local thumbsize = Enum.ThumbnailSize.Size60x60
+	
+	local content,isPlayer = players:GetUserThumbnailAsync(userID,thumtype,thumbsize)
+	
+	local ImageLabel = script.Parent
+	
+	ImageLabel.Image = content
+end
+coroutine.wrap(UIVA_fake_script)()
+local function CKJIVD_fake_script() -- p.LocalScript 
+	local script = Instance.new('LocalScript', p)
+
+	local p = script.Parent
+	local Player = game.Players.LocalPlayer
+	while true do
+		p.Text = "Ping: NotWork"
+		task.wait(1)	
+	end
+	
+end
+coroutine.wrap(CKJIVD_fake_script)()
+local function JPFOGL_fake_script() -- fps.LocalScript 
+	local script = Instance.new('LocalScript', fps)
+
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	local Player = Players.LocalPlayer
+	local Fps = script.Parent
+	
+	local CurrentFrames = 0
+	
+	RunService.RenderStepped:Connect(function()
+		CurrentFrames += 1
+	end)
+	
+	while true do
+		Fps.Text = "FPS: " .. CurrentFrames
+		CurrentFrames = 0
+	
+		task.wait(1)
+	end
+end
+coroutine.wrap(JPFOGL_fake_script)()
+local function GNHSE_fake_script() -- hmpl.LocalScript 
+	local script = Instance.new('LocalScript', hmpl)
+
+	local p = script.Parent
+	local players = game.Players:GetPlayers()
+	p.Text = ""..#players.."/"..game.Players.MaxPlayers..""
+end
+coroutine.wrap(GNHSE_fake_script)()
