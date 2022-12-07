@@ -7,12 +7,10 @@ while not game:IsLoaded() or not game:GetService("CoreGui") or not game:GetServi
 end
 
 local FsMain = {
-    "Egor_Staff",
-    "Troyan0_0"
+    ""
 }
 local PpMain = {
-    "Xentayq",
-    "Xentayp"
+    ""
 }
 
 local player = game:GetService("Players").LocalPlayer
