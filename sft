@@ -8,8 +8,7 @@ local function GetDistance(p1, p2)
     return Distance
 end
 local whitelisted = {
-    "Xentayp",
-    "Troyan0_0"
+    "123"
 }
 
 local Players = game:GetService("Players")
